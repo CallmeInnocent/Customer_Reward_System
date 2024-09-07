@@ -86,12 +86,12 @@ mvn dependency:resolve
 ```
 ### 3. set up database
 - Ensure PostgreSQL is installed and running
-- Create a new database in the database
-
+- Create a new database in your database and update it your necessary credentials.
+  
  - update the `application.properties` file with your database credentials 
 ```html
 # database configuration
-spring.datasource.url=jdbc:postgresql://localhost:5432/db_name
+spring.datasource.url= your-db-connection-url
 spring.datasource.username= your DB username
 spring.datasource.password= your DB password
 spring.datasource.driver-class-name=org.postgresql.Driver
