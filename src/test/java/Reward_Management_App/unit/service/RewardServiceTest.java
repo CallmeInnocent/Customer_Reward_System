@@ -50,7 +50,7 @@ public class RewardServiceTest {
         assertEquals(200, response.getStatus_Code());
         assertNotNull(response.getData());
         assertEquals("123", response.getData().getCustomer_Id());
-        assertEquals(new BigDecimal("100.0"), response.getData().getCashback()); // Comparing with BigDecimal
+        assertEquals(new BigDecimal("100.0"), response.getData().getCashback());
         assertEquals(new BigDecimal("500.0"), response.getData().getCurrent_Balance());
 
         verify(userRepository, times(1)).findById("123");
@@ -58,7 +58,7 @@ public class RewardServiceTest {
 
     @Test
     public void testGetTransactionHistory_Success() {
-        // Mocking the TransactionHistory list with BigDecimal and LocalDateTime
+
         List<TransactionHistory> mockTransactionHistory = new ArrayList<>();
         mockTransactionHistory.add(new TransactionHistory(
                 "TX123",
