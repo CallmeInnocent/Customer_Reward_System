@@ -1,4 +1,4 @@
-# Customer_Reward_System
+# Customer Reward System
 An application where customers can see their cashback reward for every transaction made or service paid for. 
 
 # Project Structure
