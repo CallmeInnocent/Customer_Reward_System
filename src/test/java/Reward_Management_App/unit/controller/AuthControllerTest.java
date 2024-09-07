@@ -1,5 +1,6 @@
-package Reward_Management_App.user.controller;
+package Reward_Management_App.unit.controller;
 
+import Reward_Management_App.user.controller.AuthController;
 import Reward_Management_App.user.dto.data.UserData;
 import Reward_Management_App.user.dto.request.LoginRequestDto;
 import Reward_Management_App.user.dto.response.LoginResponseDto;

@@ -1,5 +1,6 @@
-package Reward_Management_App.user.controller;
+package Reward_Management_App.unit.controller;
 
+import Reward_Management_App.user.controller.RewardsController;
 import Reward_Management_App.user.dto.data.RewardData;
 import Reward_Management_App.user.dto.response.RewardBalanceResponseDto;
 import Reward_Management_App.user.service.UserRewardService;

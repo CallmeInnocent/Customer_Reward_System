@@ -65,7 +65,7 @@ public class AuthServiceTest {
         LoginResponseDto response = loginService.userLogin(loginRequest);
 
         assertNotNull(response);
-        assertEquals("Login Successful", response.getMessage());
+        assertEquals("Login Successful! Welcome to Balanceè, where we Redefine your vehicle repairs", response.getMessage());
         assertEquals(HttpStatus.OK.value(), response.getStatus_Code());
         assertNotNull(response.getData());
         assertEquals("mockJwtToken", response.getData().getJwtToken());
@@ -93,7 +93,7 @@ public class AuthServiceTest {
 
     @Test
     public void testUserLogin_IncorrectPassword() {
-        // Mocking the User object
+
         User mockUser = new User();
         mockUser.setEmail("user@example.com");
         mockUser.setPassword("encodedPassword");
